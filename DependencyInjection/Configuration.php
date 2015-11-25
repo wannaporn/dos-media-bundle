@@ -11,7 +11,7 @@
 
 namespace Sylius\Bundle\MediaBundle\DependencyInjection;
 
-use DoS\ResourceBundle\Form\Factory;
+use DoS\ResourceBundle\Factory\Factory;
 use Sylius\Bundle\ResourceBundle\SyliusResourceBundle;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
