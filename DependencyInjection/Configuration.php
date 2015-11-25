@@ -11,6 +11,7 @@
 
 namespace Sylius\Bundle\MediaBundle\DependencyInjection;
 
+use DoS\ResourceBundle\Form\Factory;
 use Sylius\Bundle\ResourceBundle\SyliusResourceBundle;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -84,6 +85,7 @@ class Configuration implements ConfigurationInterface
                             ->addDefaultsIfNotSet()
                             ->children()
                                 ->scalarNode('model')->defaultValue('Sylius\Component\Media\Model\Image')->end()
+                                ->scalarNode('factory')->defaultValue(Factory::class)->end()
                                 ->scalarNode('controller')->defaultValue('Sylius\Bundle\ResourceBundle\Controller\ResourceController')->end()
                                 ->scalarNode('repository')->end()
                             ->end()
