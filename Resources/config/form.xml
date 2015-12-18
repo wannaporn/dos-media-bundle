@@ -28,7 +28,7 @@
         <!-- Form Types -->
         <service id="sylius.form.type.image" class="%sylius.form.type.image.class%">
             <argument>%sylius.model.image.class%</argument>
-            <argument>%sylius.validation_group.image%</argument>
+            <argument>%sylius.validation_groups.image%</argument>
             <argument type="service" id="doctrine_phpcr.odm.document_manager" />
             <argument type="service" id="doctrine.orm.entity_manager" />
             <tag name="form.type" alias="sylius_image" />
