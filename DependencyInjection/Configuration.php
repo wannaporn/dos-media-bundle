@@ -88,6 +88,7 @@ class Configuration implements ConfigurationInterface
                                     ->addDefaultsIfNotSet()
                                     ->children()
                                         ->scalarNode('model')->defaultValue('Sylius\Component\Media\Model\Image')->end()
+                                        ->scalarNode('interface')->defaultValue('Sylius\Component\Media\Model\ImageInterface')->end()
                                         ->scalarNode('factory')->defaultValue(Factory::class)->end()
                                         ->scalarNode('controller')->defaultValue('Sylius\Bundle\ResourceBundle\Controller\ResourceController')->end()
                                         ->scalarNode('repository')->end()

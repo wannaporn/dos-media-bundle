@@ -34,16 +34,6 @@ class SyliusMediaBundle extends AbstractResourceBundle
     /**
      * {@inheritdoc}
      */
-    protected function getModelInterfaces()
-    {
-        return array(
-            'Sylius\Component\Media\Model\ImageInterface' => 'sylius.model.image.class',
-        );
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     protected function getModelNamespace()
     {
         return 'Sylius\Component\Media\Model';
